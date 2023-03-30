@@ -11,10 +11,11 @@
     <fieldset>
         <legend>User registration!</legend>
         <label for="username">Enter your Username</label>
-        <input type="text" name="username" id="username">
+        <input type="text" name="username" id="username" placeholder="a@gmail.com">
+        <!-- readonly , disabled -->
         <br>
         <label for="useremail">Enter your Email</label>
-        <input type="email" name="useremail" id="useremail">
+        <input type="email" name="useremail" id="useremail" autofocus>
         <br>
         <label for="password">Enter Password</label>
         <input type="password" id="pasword" name="password">
@@ -24,6 +25,9 @@
         <input type="radio" name="gender" id="male">
         <label for="female">Female</label>
         <input type="radio" name="gender" id="female">
+          <br>
+          Enter number:
+          <input type="number" min="0" max="10">
           <br>
         <input type="submit" value="Submit Form">
 
