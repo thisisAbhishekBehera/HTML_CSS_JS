@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class</title>
+    <style>
+    
+        a:first-child {
+            background-color: rgb(208, 255, 0);
+        }
+        p::first-line {
+             color: violet;
+        }
+        p::after {
+            content:"-Abhishek" ;
+            color: blue;
+        }
+        p::before {
+            content:"-Abhishek" ;
+            color: blue;
+        }
+        p::selection {
+            background-color: red;
+            color: yellow;
+        }
+        p {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Pseudo class -->
+      <p class="hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quos minus nostrum est inventore excepturi! Vitae consectetur eligendi commodi beatae!</p>
+      <input type="text">
+      <hr>
+      <nav>
+        <a href="google.com">Google</a>
+        <a href="google.com">Google</a>
+        <a href="google.com">Google</a>
+        <a href="google.com">Google</a>
+      </nav>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsa eos iste natus porro harum deleniti eaque velit sit ea distinctio cum ut, id nulla magnam nam, repellendus nihil non provident pariatur. Facilis eum laudantium architecto numquam vel. Odio quaerat nam eaque iusto ratione, animi delectus tempora optio sed sint?</p>
+    
+</body>
+</html>
