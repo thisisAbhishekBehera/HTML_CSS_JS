@@ -1,0 +1,43 @@
+body {
+    background-color: aquamarine;
+}
+
+div {
+    font-size: x-large;
+    text-align: center;
+}
+
+div::after {
+    content: 'Welcome to Demo';
+}
+
+@media (max-width: 400px) {
+    body {
+        background-color: white;
+    }
+    div::after {
+        content: 'Very Small';
+    }
+}
+
+@media(min-width: 400px) and (max-width:700px) {
+    body {
+        background-color: chocolate;
+
+    }
+    div::after {
+        content: 'mid size device';
+    }
+}
+
+@media (min-width: 900px) {
+    /* if viewport is atleast
+    900px then this style will apply
+    */
+    body {
+        background-color: chartreuse;
+    }
+    div::after {
+        content: 'Woah its working';
+    }
+}
